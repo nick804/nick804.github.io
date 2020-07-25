@@ -1,39 +1,12 @@
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+var slideIndex = 0;
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-
-function loadMorePictures(){
-
-  document.getElementById('hidden_images').style.display = 'block';
-  $('#loadMoreButton').remove();
-}
-
 
 var images = [
   {file:'laundry_room.jpg', caption: 'Laundry room'},
@@ -61,18 +34,44 @@ var images = [
   {file:'house_from_front_daytime.jpg', caption: 'House at daytime'}
 ];
 
-function setup(){
-  var i = 0;
-  //Add 8 images
-  while(i < 8){
-      $('#visible_images').prepend('<div class="w3-col m3"><img  src="images/' + images[i].file + '" style="width:100%; padding:5px;" onclick="onClick(this)" class="w3-hover-opacity" alt="' + images[i].caption + '"/></div>');
-      i++;
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 0}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
   }
 
-  while(i < images.length){
-    $('#hidden_images').append('<div class="w3-col m3"><img  src="images/' + images[i].file + '" style="width:100%; padding:5px;" onclick="onClick(this)" class="w3-hover-opacity" alt="' + images[i].caption + '"><img></div>');
-    i++;
+$(' #' + n).css('display', 'block');
+  //$(slides).find('#' + n).css('display', "block");
+  $('#dot-' + n).addClass("active");
+  captionText.innerHTML = $('#dot-' + n).attr('alt');
+
+}
+
+function setup(){
+  //Calculate and add dots
+  var imagesCount = images.length;
+  for(var i = 0; i < imagesCount; i++){
+    $('#dot-container').append('<span class="dot"></span>');
   }
+
+  //Add images
+  for(var i = 0; i < images.length; i++){
+      $('#slides').append('<div class="mySlides" style="padding-left:100px;" id="' + i + '"><div class="numbertext">' + (i + 1) + ' / ' + images.length + '</div><img  src="images/' + images[i].file + '" style="width:90%" "><img></div>');
+  }
+  //Add thumbnails
+  for(var i = 0; i < images.length; i++){
+      $('#thumbnails').prepend('<div class="column"><img class="demo cursor" id="dot-' + i + '" src="images/' + images[i].file + '" style="width:50%;" onclick="currentSlide(' + i + ')" alt="' + images[i].caption + '" "><img></div>');
+  }
+  showSlides(0);
+
 }
 
 $(function(){
