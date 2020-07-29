@@ -36,36 +36,36 @@ function loadMorePictures(){
 
 
 var images = [
-  {file:'laundry_room.jpg', caption: 'Laundry room'},
-  {file:'upstairs_sitting_area_no_table.jpg', caption: 'Sitting area upstairs, will have a table'},
-  {file:'upstairs_corridor.jpg', caption: 'Upstairs Corridor'},
-  {file:'room_with_half_bath_window_4.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_window_3.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_window_2.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_window.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_open_curtain_fully_stocked.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_desk_2.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_desk.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_curtain_open_full_stock_2.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_curtain_open_full_stock.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_curtain_open.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_curtain_closed_2.jpg', caption: 'Room with Half Bath'},
-  {file:'room_with_half_bath_curtain_closed.jpg', caption: 'Room with Half Bath'},
-  {file:'sitting_area_lights_on.jpg', caption: 'Downstairs sitting area'},
-  {file:'kitchen_left.jpg', caption: 'Kitchen from the left'},
-  {file:'kitchen_right.jpg', caption: 'Kitchen from the right'},
-  {file:'entrance_far_left.jpg', caption: 'Looking out from the entrance far left'},
-  {file:'entrance_left_view.jpg', caption: 'Looking out from the entrance slightly left'},
-  {file:'entrance_from_front.jpg', caption: 'Entrance from front of house'},
-  {file:'entrance_from_front_at_dusk.jpg', caption: 'House at dusk, notice the lamp lighting'},
-  {file:'house_from_front_daytime.jpg', caption: 'House at daytime'}
+  {file:'house/front_no_car_but_not_great.jpg', caption: 'Front of house, the leftmost door is the entrance to where tenants will stay.'},
+  {file:'house/front_door.jpg', caption: 'Front door leading into the tenants part of the building.'},
+  {file:'community_areas/kitchen_from_door.jpg', caption: 'The downstairs kitchen, after entering through the front door.'},
+  {file:'community_areas/kitchen_from_sitting_area.jpg', caption: 'The downstairs kitchen, from the sitting area.'},
+  {file:'community_areas/sitting_area_from_kitchen.jpg', caption: 'The sitting area, downstairs, to the left of the kitchen.'},
+  {file:'community_areas/upstairs_hallway.jpg', caption: 'The upstairs hallway, with several of the rooms off the sides, and a small nook at the end with a Keurig machine, chairs, and a table.'},
+  {file:'community_areas/upstairs_sitting_area.jpg', caption: 'The upstairs sitting area nook, to the right is a microwave, keurig machine, mini fridge, and small sink.'},
+  {file:'community_areas/upstairs_sitting_area.jpg', caption: 'The upstairs sitting area nook, to the right is a microwave, keurig machine, mini fridge, and small sink.'},
+  {file:'community_areas/upstairs_showers.jpg', caption: 'The upstairs showers (To the right of the sitting area), there is another one on the first floor as well.'},
+  {file:'community_areas/shower_straight_on.jpg', caption: 'Full view of the showers. There are three in total, and all look like this. (2 on 2nd floor, 1 on first floor).'},
+  {file:'community_areas/looking_upstairs.jpg', caption: 'The stairs leading to the second floor.'},
+  {file:'rooms/room_102.jpg', caption: 'Room 102, identical to most of the rooms available'},
+  {file:'rooms/room_204.jpg', caption: 'Room 204'},
+  {file:'rooms/room_205_with_bathroom.jpg', caption: 'Room 205, with a view of the bath area.'},
+  {file:'rooms/room_205.jpg', caption: 'Room 205'},
+  {file:'rooms/room_206.jpg', caption: 'Room 206'},
+  {file:'rooms/room_207.jpg', caption: 'Room 207'},
+  {file:'rooms/room_208.jpg', caption: 'Room 208'},
+  {file:'rooms/room_209.jpg', caption: 'Room 209'},
+  {file:'rooms/room_210.jpg', caption: 'Room 210'},
+  {file:'rooms/room_with_bathroom_left.jpg', caption: 'For the rooms that have the bath area, this is a leftern view of the bath area.'},
+  {file:'rooms/room_with_bathroom_right.jpg', caption: 'For the rooms that have the bath area, this is a rightmost view of the bath area.'},
 ];
 
 function setup(){
+
   var i = 0;
   //Add 8 images
-  while(i < 8){
-      $('#visible_images').prepend('<div class="w3-col m3"><img  src="images/' + images[i].file + '" style="width:100%; padding:5px;" onclick="onClick(this)" class="w3-hover-opacity" alt="' + images[i].caption + '"/></div>');
+  while(i < 4){
+      $('#visible_images').append('<div class="w3-col m3"><img  src="images/' + images[i].file + '" style="width:100%; padding:5px;" onclick="onClick(this)" class="w3-hover-opacity" alt="' + images[i].caption + '"/></div>');
       i++;
   }
 

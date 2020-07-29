@@ -15,8 +15,8 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('../images/entrance_from_front.jpg');
-  min-height: 50%;
+  background-image: url('../images/house/front_door.jpg');
+  min-height: 81%;
 }
 
 /* Second image (Portfolio) */
