@@ -36,6 +36,7 @@ function loadMorePictures(){
 
 
 var images = [
+  {file:'house/house_at_night.jpg', caption: 'Front of house, the leftmost door is the entrance to where tenants will stay.'},
   {file:'house/front_no_car_but_not_great.jpg', caption: 'Front of house, the leftmost door is the entrance to where tenants will stay.'},
   {file:'house/front_door.jpg', caption: 'Front door leading into the tenants part of the building.'},
   {file:'community_areas/kitchen_from_door.jpg', caption: 'The downstairs kitchen, after entering through the front door.'},
