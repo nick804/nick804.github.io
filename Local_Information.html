@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>Rosewood Lodging</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<style>
+
+.mapouter{
+  position:relative;
+  top:50%;
+  left: 5%;
+  /* margin-right:-50%; */
+  text-align:right;
+  height:400px;
+  width:800px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:400px;
+  width:800px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="./index.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="./index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="./index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALLERY</a>
+    <a href="./index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="./local_information.html#local" class="w3-bar-item w3-button w3-hide-small">LOCAL INFORMATION</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="./index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="./index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">GALLERY</a>
+    <a href="./index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="./local_information.html#local" class="w3-bar-item w3-button" onclick="toggleFunction()">LOCAL INFORMATION</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Rosewood Lodging</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="local">
+  <h3 class="w3-center">Local Amenities & Shops</h3>
+  <p class="w3-center"><em>Situated around and near west gardiner...</em></p>
+  <div class="row">
+    <p class="w3-center">
+        <h2><a href="https://www.fullersmarket.com/" alt="https://www.fullersmarket.com/">Fuller's Market</a></h2>
+        <p>Fuller’s Market is a locally family-owned IGA supermarket carrying everything you need on your grocery list. From basic everyday items to specialty items we will meet your needs. Our meat department is well known as one of central Maine’s premier meat markets. We offer special meat packages to meet any budget and our friendly professional butchers are on hand to answer your questions. Our newly renovated store is now offering some grocery items from local farmers and Maine businesses.
+
+Don’t feel like cooking? We’ve got you covered...daily fresh baked goods, take-out, or dine in for breakfast, lunch or dinner! At Fuller’s Market our cooks are ready to prepare you a delicious meal. Have an upcoming event such as a wedding, graduation, pig roast, or any type of gathering? Ask us about our catering services, we do that too.</p>
+
+    </p>
+    <br>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=599%20Hallowell%20Ltchfld%20Rd%2C%20West%20Gardiner%2C%20ME&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a></div>
+  </div>
+  <div class="row">
+    <p class="w3-center">
+        <h2><a href="https://www.facebook.com/FourCornersStore" alt="https://www.facebook.com/FourCornersStore">Four Corners Store</a></h2>
+        <p>We are a small town family owned business! We have been the owners for just short of 5 years! Randy and Nancy are the owners and their daughter, Ali manages the store for them. Each and every employee brings something great to the table and everyone is he</p>
+        <br>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=%201273%20High%20St%2C%20West%20Gardiner%2C%20ME%2004345&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#local" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
