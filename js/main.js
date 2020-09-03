@@ -8,14 +8,14 @@ function onClick(element) {
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+// function myFunction() {
+//     var navbar = document.getElementById("myNavbar");
+//     // if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+//         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+//     // } else {
+//     //     navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+//     // }
+// }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
@@ -61,6 +61,13 @@ var images = [
   {file:'rooms/room_with_bathroom_right.jpg', caption: 'For the rooms that have the bath area, this is a rightmost view of the bath area.'},
 ];
 
+
+function fillGallery(){
+  for(var i = 0; i < images.length; i++){
+    $('#thumbnails > div').append('<img src="images/' + images[i].file + '" class="thumbnail" alt="' + images[i].caption + '"/>');
+  }
+}
+
 function setup(){
 
   var i = 0;
@@ -79,7 +86,11 @@ function setup(){
 $(function(){
   console.log('Starting wepapp...');
 
+  var navbar = document.getElementById("myNavbar");
+  navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+
   setup();
 
+  fillGallery();
 
 });
