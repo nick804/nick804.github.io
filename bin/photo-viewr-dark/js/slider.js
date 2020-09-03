@@ -108,9 +108,11 @@ $(function () {
         var selected = $('.selected').attr('src');
         var container = $('.fullscreen-container');
         $('.fullscreen-div').css({
-            'background-image': 'url(' + selected + ')',
-            'background-size': 'cover'
+            // 'background-image': 'url(' + selected + ')',
+            // 'background-size': 'cover'
         });
+        $('.fullscreen-div').find('img[data-item]').detach();
+        $('.fullscreen-div').append('<img src="' + selected + '" height="100%" data-item />');
         container.fadeIn('slow');
         container.on('click', function () {
             $(this).fadeOut('slow');

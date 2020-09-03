@@ -152,9 +152,9 @@
     display: block;
     margin: auto;
     position: fixed;
-    top: 0;
+    top: 10%;
     bottom: 0;
-    left: 0;
+    left: 20%;
     right: 0;
 }
 
