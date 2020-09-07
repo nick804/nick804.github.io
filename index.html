@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="shortcut icon" type="image/jpg" href="images/rosewood_lodging_logo.png"/>
+  <link rel="shortcut icon" type="image/jpg" href="images/signature/rosewood_lodging_logo.png"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -35,6 +35,19 @@
     height:400px;
     width:100%;
   }
+
+  .custom_button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
   </style>
 </head>
 <body>
@@ -75,18 +88,18 @@
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT US</h3>
   <p class="w3-center"><em>Travel with the comforts of home...</em></p>
-  <p><!--Set in the small town of West Gardiner, Maine; We provide lodging for <i><b>medical professionals</b></i> from across the U.S. to stay for short to long term housing. With easy access to major highways, and interstates, we are positioned in a wonderful location. Scenic views, small-town feel and charm, and local businesses as well. We are near the water, and provide a perfect environment equipped with all the equipment and amenities needed to make your stay comfortable and easy. Rather than focusing on lodging, focus on your work with our quiet and relaxed environment helping you to destress after working. We have a variety of rooms available, several include their own half-bath, and vanity, whilst others forgo this specific feature for a built-in closet, and a shared bathroom.-->Nestled in the small town of West Gardiner, Maine.<br><br>Rosewood Lodging offers ten very comfortable and fully furnished rooms, for short and
+  <p>Nestled in the small town of West Gardiner, Maine.<br><br>Rosewood Lodging offers ten very comfortable and fully furnished rooms, for short and
 extended stay, for travelling medical and business professionals. Amenities include smart TV's, hard wired Ethernet
 connections & WiFi, private 1⁄2 baths, a laundry room, and an open kitchen is available for those who
 enjoy cooking themselves or choose one of our local grocers who prepare home cooked meals.</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="images/owners.jpg" class="w3-round w3-image " alt="Photo of Me" width="300" height="333">
+      <img src="images/signature/owners.jpg" class="w3-round w3-image " alt="Photo of Me" width="300" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p><!--We aim to provide quality living, and a beautiful, quiet environment to retreat to when you've had a stressful day at the office. When you join our environment, we'll greet you with a smile and a welcome bag with some local guides, menus, and - of course - an item to remember us by! <br><br> We are available on <i> some website</i> where you can contact us, and see if we have a room for you. Don't forget to stop by our Gallery to see some pictures of the rooms, and the environment (Especially our local crafted high-top table made from 100 year old cherry!)-->Rosewood Lodging is conveniently located between 5 major medical centers within 20 to 35 minutes
+      <p>Rosewood Lodging is conveniently located between 5 major medical centers within 20 to 35 minutes
 of driving. Easy access to major highways makes Rosewood Lodging the perfect destination to call
 home while you are on your assignment.<br><br>Let's chat, give us a call today!<br><br>Sincerely,<br><br>Nick & Pam</p>
     </div>
@@ -123,21 +136,16 @@ home while you are on your assignment.<br><br>Let's chat, give us a call today!<
 
 
   <div class="w3-row-padding w3-center slick_custom_container">
+    <!-- <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button> -->
     <div class="photo-gallery-slider">
-
     </div>
+    <!-- <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button> -->
   </div>
-
+  <div class="w3-row-padding w3-center">
+    <button class="custom_button" type="button" role="next" onClick="$('.photo-gallery-slider').slick('slickPrev')">Previous</button>
+    <button class="custom_button" type="button" role="next" onClick="$('.photo-gallery-slider').slick('slickNext')">Next</button>
+  </div>
 </div>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <!-- <div class="w3-row-padding w3-center">
-    <div class="w3-row-padding w3-center" id="visible_images"></div>
-
-    <button id="loadMoreButton" class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px;" onClick="loadMorePictures()">LOAD MORE</button>
-    <div id="hidden_images" style="display:none;" class="w3-row-padding w3-center">
-    </div>
-  </div> -->
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
