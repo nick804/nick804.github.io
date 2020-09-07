@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
-<title>Rosewood Lodging</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/custom.css">
-<link rel="shortcut icon" type="image/jpg" href="images/rosewood_lodging_logo.png"/>
-<style>
+<head>
+  <title>Rosewood Lodging</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="shortcut icon" type="image/jpg" href="images/rosewood_lodging_logo.png"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-.mapouter{
-  position:relative;
-  top:50%;
-  left: 5%;
-  /* margin-right:-50%; */
-  text-align:right;
-  height:400px;
-  width:800px;
-}
 
-.gmap_canvas {
-  overflow:hidden;
-  background:none!important;
-  height:400px;
-  width:800px;
-}
-</style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <style>
+
+  .mapouter{
+    position:relative;
+    top:50%;
+    left: 5%;
+    /* margin-right:-50%; */
+    text-align:right;
+    height:400px;
+    width:100%;
+  }
+
+  .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:400px;
+    width:100%;
+  }
+  </style>
+</head>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -106,18 +115,29 @@ home while you are on your assignment.<br><br>Let's chat, give us a call today!<
 
 
 <!-- Container (Portfolio Section) -->
+
+
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">Photos from around Rosewood</h3>
   <p class="w3-center"><em>Click on the images to make them bigger!</em></p><br>
 
+
+  <div class="w3-row-padding w3-center slick_custom_container">
+    <div class="photo-gallery-slider">
+
+    </div>
+  </div>
+
+</div>
+
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
+  <!-- <div class="w3-row-padding w3-center">
     <div class="w3-row-padding w3-center" id="visible_images"></div>
 
     <button id="loadMoreButton" class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px;" onClick="loadMorePictures()">LOAD MORE</button>
     <div id="hidden_images" style="display:none;" class="w3-row-padding w3-center">
     </div>
-  </div>
+  </div> -->
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -136,16 +156,17 @@ home while you are on your assignment.<br><br>Let's chat, give us a call today!<
   <p class="w3-center"><em>We'd love to discuss your stay!</em><br><br><br><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 9 Elm St. West Gardiner, ME<br>
   <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone (Nick): +1 (207) 441-6025<br>
   <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:contact@rosewoodlodging.com<br></p>
-  <div class="mapouter custom-map"><div class="gmap_canvas"><iframe width="800" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=9%20Elm%20St.%20West%20Gardiner%20ME&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a></div></div>
+  <div class="mapouter custom-map"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=9%20Elm%20St.%20West%20Gardiner%20ME&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a></div></div>
 
 </div>
 
 
 
 <!-- Footer -->
-<footer class="w3-center w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-</footer>
-  <script type="text/javascript" src="js/main.js"></script>
-</body>
+    <footer class="w3-center w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>

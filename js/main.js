@@ -6,17 +6,6 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-// function myFunction() {
-//     var navbar = document.getElementById("myNavbar");
-//     // if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-//     // } else {
-//     //     navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-//     // }
-// }
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
@@ -81,6 +70,10 @@ function setup(){
     $('#hidden_images').append('<div class="w3-col m3"><img  src="images/' + images[i].file + '" style="width:100%; padding:5px;" onclick="onClick(this)" class="w3-hover-opacity" alt="' + images[i].caption + '"><img></div>');
     i++;
   }
+
+  for(var j =0; j < images.length; j++){
+    $('.photo-gallery-slider').append('<div><img class="slide" onClick="onClick(this)" data-lazy="images/' + images[j].file + '" alt="' + images[j].caption + '"/></div>');
+  }
 }
 
 $(function(){
@@ -89,8 +82,23 @@ $(function(){
   var navbar = document.getElementById("myNavbar");
   navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
 
+
+
   setup();
 
-  fillGallery();
+  $('.photo-gallery-slider').slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    variableWidth: true,
+    infinite: true,
+    centerMode: true,
+    adaptiveHeight: true
+  });
+
+  // fillGallery();
 
 });

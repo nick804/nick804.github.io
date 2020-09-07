@@ -41,3 +41,13 @@ body, html {
     min-height: 400px;
   }
 }
+
+
+div.slick_custom_container{
+  height: 100%;
+}
+
+img.slide{
+  margin: 20px;
+  height: 200px;
+}
