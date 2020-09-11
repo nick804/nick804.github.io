@@ -75,7 +75,7 @@ function setup(){
 
 //data-lazy
   for(var j =0; j < images.length; j++){
-    $('.photo-gallery-slider').append('<div><img class="slide" onClick="onClick(this)" date-lazy="images/' + images[j].file + '" alt="' + images[j].caption + '"/></div>');
+    $('.photo-gallery-slider').append('<div><img class="slide" onClick="onClick(this)" data-lazy="images/' + images[j].file + '" alt="' + images[j].caption + '"/></div>');
   }
 }
 
