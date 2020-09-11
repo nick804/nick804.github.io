@@ -75,7 +75,7 @@ function setup(){
 
 //data-lazy
   for(var j =0; j < images.length; j++){
-    $('.photo-gallery-slider').append('<div><img class="slide" onClick="onClick(this)" ' + (window.screen.width < 1600 || true ? 'src':'data-lazy') + '="images/' + images[j].file + '" alt="' + images[j].caption + '"/></div>');
+    $('.photo-gallery-slider').append('<div><img class="slide" onClick="onClick(this)" date-lazy="images/' + images[j].file + '" alt="' + images[j].caption + '"/></div>');
   }
 }
 
@@ -90,7 +90,7 @@ $(function(){
   setup();
 
   $('.photo-gallery-slider').slick({
-    // lazyLoad: window.screen.width < 1600 ? null: 'ondemand',
+    lazyLoad: 'ondemand',
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: window.screen.width < 1600? false: true,
