@@ -81,6 +81,16 @@ function setup(){
   }
 }
 
+function customScroll(){
+  if(document.body.scrollTop > 800 || document.documentElement.scrollTop > 800){
+    $('.icon-bar').removeClass('hidden');
+    $('.icon-bar').addClass('visible');
+  }else{
+    $('.icon-bar').removeClass('visible');
+    $('.icon-bar').addClass('hidden');
+  }
+}
+
 $(function(){
   console.log('Starting wepapp...');
 
@@ -104,6 +114,7 @@ $(function(){
     adaptiveHeight: true
   });
 
+window.onscroll = function(){customScroll()};
   // fillGallery();
 
 });
