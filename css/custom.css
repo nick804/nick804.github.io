@@ -44,7 +44,7 @@ body, html {
 
 @media only screen and (max-device-width: 1600px) {
   .media-bar {
-    display: none;
+
   }
 }
 
@@ -99,6 +99,10 @@ background-color: #5cb85c;
 border-color: #4cae4c;
 }
 
+p.small-font{
+    font-size: 11px;
+}
+
 /* Icon bar */
 .icon-bar {
   position: fixed;
@@ -126,6 +130,10 @@ border-color: #4cae4c;
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .twitter {
   background: #55ACEE;
   color: white;
@@ -144,4 +152,29 @@ border-color: #4cae4c;
 .youtube {
   background: #bb0000;
   color: white;
+}
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }

@@ -30,6 +30,8 @@ var images = [
   {file:'external/daylight/1.jpg', caption: 'Entrance to the tenants side of the building.'},
   {file:'internal/downstairs/kitchen/1.jpg', caption: 'The sitting area downstairs'},
   {file:'internal/downstairs/kitchen/2.jpg', caption: 'The kitchen and dining table downstairs'},
+  {file:'internal/downstairs/kitchen/3.jpg', caption: 'The kitchen and dining table downstairs'},
+  {file:'internal/downstairs/kitchen/4.jpg', caption: 'The kitchen and dining table downstairs'},
   {file:'internal/downstairs/hallway/2.jpg', caption: 'The downstairs hallway, looking to the shower room, and to the right is the laundry area'},
   {file:'internal/downstairs/utility/1.jpg', caption: 'The laundry area for the tenants'},
   {file:'internal/upstairs/hallways/1.jpg', caption: 'The upstairs hallway, looking to the sitting area, with bedroom on either side'},
