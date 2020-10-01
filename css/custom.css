@@ -43,9 +43,33 @@ body, html {
 }
 
 @media only screen and (max-device-width: 1600px) {
-  .media-bar {
-
+  div.media-bar {
+    display: none;
   }
+}
+
+.visible,
+.hidden {
+  overflow: hidden;
+  /* This container should not have padding, borders, etc. */
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .2s linear;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s .2s, opacity 2s linear;
+}
+.visible > div,
+.hidden > div {
+  /* Put any padding, border, min-height, etc. here. */
+}
+.hidden > div {
+  margin-top: -10000px;
+  transition: margin-top 0s 2s;
 }
 
 .slick-arrow{
@@ -112,29 +136,6 @@ p.small-font{
   transform: translateY(-50%);
 }
 
-.visible,
-.hidden {
-  overflow: hidden;
-  /* This container should not have padding, borders, etc. */
-}
-.visible {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity .2s linear;
-}
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s .2s, opacity 2s linear;
-}
-.visible > div,
-.hidden > div {
-  /* Put any padding, border, min-height, etc. here. */
-}
-.hidden > div {
-  margin-top: -10000px;
-  transition: margin-top 0s 2s;
-}
 
 .icon-bar a {
   display: block;
