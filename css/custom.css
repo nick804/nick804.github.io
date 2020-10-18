@@ -42,7 +42,7 @@ body, html {
   }
 }
 
-@media only screen and (max-device-width: 1600px) {
+@media only screen and (max-device-width: 1200px) {
   div.media-bar {
     display: none;
   }
@@ -202,4 +202,9 @@ html {
   display: none;
   background-color: white;
   overflow: hidden;
+}
+
+
+#home > div.w3-display-middle{
+  top: 95%;
 }
