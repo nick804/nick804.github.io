@@ -28,7 +28,7 @@ var images = [
   {file:'external/dusk/1.jpg', caption: 'From the front of the building, at dusk with the lamp lights on.'},
   {file:'external/dusk/2.jpg', caption: 'From the front of the building, at dusk with the lamp lights on.'},
   {file:'external/daylight/1.jpg', caption: 'Entrance to the tenants side of the building.'},
-  {file:'external/daylight/2.jpg', caption: 'Aerial view of the property'},
+  {file:'external/daylight/picture_2.jpg', caption: 'Aerial view of the property'},
   {file:'internal/downstairs/kitchen/1.jpg', caption: 'The sitting area downstairs'},
   {file:'internal/downstairs/kitchen/2.jpg', caption: 'The kitchen and dining table downstairs'},
   {file:'internal/downstairs/kitchen/3.jpg', caption: 'The kitchen and dining table downstairs'},
