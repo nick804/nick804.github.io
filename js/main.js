@@ -49,8 +49,6 @@ var images = [
   {file:'internal/rooms/new_rooms/window_1.jpg', caption: 'One of the rooms, with cedar trim, and brand new everything'},
   {file:'internal/rooms/new_rooms/window_2.jpg', caption: 'One of the rooms, with cedar trim, and brand new everything'},
   {file:'internal/rooms/new_rooms/hallway_1.jpg', caption: 'Looking from the room into the upstairs hallway'},
-  {file:'internal/rooms/new_rooms/bath_left_1.jpg', caption: 'Private half-bath, from the left'},
-  {file:'internal/rooms/new_rooms/bath_right_1.jpg', caption: 'Private half-bath, from the right'},
   {file:'internal/rooms/new_rooms/downstairs_room_1.jpg', caption: 'One of the downstairs rooms, the downstairs rooms have slightly higher ceilings, at just over 8-feet high.'},
   {file:'internal/rooms/new_rooms/downstairs_room_2.jpg', caption: 'One of the downstairs rooms, the downstairs rooms have slightly higher ceilings, at just over 8-feet high.'},
 ];
