@@ -29,10 +29,9 @@ var images = [
   {file:'external/dusk/2.jpg', caption: 'From the front of the building, at dusk with the lamp lights on.'},
   {file:'external/daylight/1.jpg', caption: 'Entrance to the tenants side of the building.'},
   {file:'external/daylight/picture_2.jpg', caption: 'Aerial view of the property'},
-  {file:'internal/downstairs/kitchen/1.jpg', caption: 'The sitting area downstairs'},
-  {file:'internal/downstairs/kitchen/2.jpg', caption: 'The kitchen and dining table downstairs'},
-  {file:'internal/downstairs/kitchen/3.jpg', caption: 'The kitchen and dining table downstairs'},
-  {file:'internal/downstairs/kitchen/4.jpg', caption: 'The kitchen and dining table downstairs'},
+  {file:'internal/downstairs/kitchen/kitchen_left.jpg', caption: 'The dining table and pantry space'},
+  {file:'internal/downstairs/kitchen/kitchen_right.jpg', caption: 'The kitchen and food prep space downstairs'},
+  {file:'internal/downstairs/kitchen/whoopie_pies.jpg', caption: 'Occassional treats like these delicious homemade whoopie pies'},
   {file:'internal/downstairs/hallway/2.jpg', caption: 'The downstairs hallway, looking to the shower room, and to the right is the laundry area'},
   {file:'internal/downstairs/utility/1.jpg', caption: 'The laundry area for the tenants'},
   {file:'internal/upstairs/hallways/1.jpg', caption: 'The upstairs hallway, looking to the sitting area, with bedroom on either side'},
@@ -50,7 +49,6 @@ var images = [
   {file:'internal/rooms/new_rooms/window_2.jpg', caption: 'One of the rooms, with cedar trim, and brand new everything'},
   {file:'internal/rooms/new_rooms/hallway_1.jpg', caption: 'Looking from the room into the upstairs hallway'},
   {file:'internal/rooms/new_rooms/downstairs_room_1.jpg', caption: 'One of the downstairs rooms, the downstairs rooms have slightly higher ceilings, at just over 8-feet high.'},
-  {file:'internal/rooms/new_rooms/downstairs_room_2.jpg', caption: 'One of the downstairs rooms, the downstairs rooms have slightly higher ceilings, at just over 8-feet high.'},
 ];
 
 
@@ -102,7 +100,7 @@ $(function(){
 
   $('.photo-gallery-slider').slick({
     lazyLoad: 'ondemand',
-    slidesToShow: 2,
+    slidesToShow: 5,
     slidesToScroll: 1,
     dots: window.screen.width < 1600? false: true,
     autoplay: true,
