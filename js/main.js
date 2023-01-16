@@ -47,7 +47,6 @@ var images = [
   {file:'internal/rooms/new_rooms/window_1.jpg', caption: 'One of the rooms, with cedar trim, and brand new everything'},
   {file:'internal/rooms/new_rooms/window_2.jpg', caption: 'One of the rooms, with cedar trim, and brand new everything'},
   {file:'internal/rooms/new_rooms/hallway_1.jpg', caption: 'Looking from the room into the upstairs hallway'},
-  {file:'internal/rooms/new_rooms/downstairs_room_1.jpg', caption: 'One of the downstairs rooms, the downstairs rooms have slightly higher ceilings, at just over 8-feet high.'},
   {file:'studio/studio_1.jpg', caption: 'Closet of Studio appt.'},
   {file:'studio/studio_2.jpg', caption: 'Studio sitting area & dining area'},
   {file:'studio/studio_3.jpg', caption: 'Studio full bathroom'},
