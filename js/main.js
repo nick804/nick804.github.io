@@ -42,13 +42,18 @@ var images = [
   {file:'internal/upstairs/utility/1.jpg', caption: 'One of the two shower rooms upstairs, heater, bench, and powerful fan'},
   {file:'internal/upstairs/utility/2.jpg', caption: 'The upstairs shared full bath, shower to the right of the picture'},
   {file:'internal/upstairs/utility/3.jpg', caption: 'Upstairs showers, there are two in total on the second floor, one on the first floor as well'},
-  {file:'internal/upstairs/sitting_area/1.jpg', caption: 'The upstairs sitting area, a high-top table with several chairs'},
   {file:'internal/upstairs/sitting_area/2.jpg', caption: 'The upstairs sitting area "kitchen" nook, with a Keurig machine, sink, mini fridge, microwave, and some cabinetry'},
   {file:'internal/upstairs/sitting_area/3.jpg', caption: 'Coffee should speak for itself...'},
   {file:'internal/rooms/new_rooms/window_1.jpg', caption: 'One of the rooms, with cedar trim, and brand new everything'},
   {file:'internal/rooms/new_rooms/window_2.jpg', caption: 'One of the rooms, with cedar trim, and brand new everything'},
   {file:'internal/rooms/new_rooms/hallway_1.jpg', caption: 'Looking from the room into the upstairs hallway'},
   {file:'internal/rooms/new_rooms/downstairs_room_1.jpg', caption: 'One of the downstairs rooms, the downstairs rooms have slightly higher ceilings, at just over 8-feet high.'},
+  {file:'studio/studio_1.jpg', caption: 'Closet of Studio appt.'},
+  {file:'studio/studio_2.jpg', caption: 'Studio sitting area & dining area'},
+  {file:'studio/studio_3.jpg', caption: 'Studio full bathroom'},
+  {file:'studio/studio_4.jpg', caption: 'Studio full bathroom'},
+  {file:'studio/studio_5.jpg', caption: 'Studio, bed and front door'},
+  {file:'studio/studio_6.jpg', caption: 'Picture of the studio units'},
 ];
 
 
