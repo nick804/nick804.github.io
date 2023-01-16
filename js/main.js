@@ -47,12 +47,12 @@ var images = [
   {file:'internal/rooms/new_rooms/window_1.jpg', caption: 'One of the rooms, with cedar trim, and brand new everything'},
   {file:'internal/rooms/new_rooms/window_2.jpg', caption: 'One of the rooms, with cedar trim, and brand new everything'},
   {file:'internal/rooms/new_rooms/hallway_1.jpg', caption: 'Looking from the room into the upstairs hallway'},
-  {file:'studio/studio_1.jpg', caption: 'Closet of Studio appt.'},
-  {file:'studio/studio_2.jpg', caption: 'Studio sitting area & dining area'},
-  {file:'studio/studio_3.jpg', caption: 'Studio full bathroom'},
-  {file:'studio/studio_4.jpg', caption: 'Studio full bathroom'},
-  {file:'studio/studio_5.jpg', caption: 'Studio, bed and front door'},
   {file:'studio/studio_6.jpg', caption: 'Picture of the studio units'},
+  {file:'studio/studio_5.jpg', caption: 'Studio, bed and front door'},
+  {file:'studio/studio_4.jpg', caption: 'Studio full bathroom'},
+  {file:'studio/studio_3.jpg', caption: 'Studio full bathroom'},
+  {file:'studio/studio_2.jpg', caption: 'Studio sitting area & dining area'},
+  {file:'studio/studio_1.jpg', caption: 'Closet of Studio appt.'},
 ];
 
 
