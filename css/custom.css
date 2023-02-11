@@ -1,105 +1,132 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+
 body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
 }
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('../images/signature/landing_page_photo.jpg');
-  min-height: 81%;
+    background-image: url('../images/signature/landing_page_photo.jpg');
+    min-height: 81%;
+    background-position: right bottom;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url(".../images/signature/owners.jpg");
-  min-height: 400px;
+    background-image: url("../images/signature/owners.jpg");
+    min-height: 400px;
 }
 
-/* Third image (Contact) */
-/* .bgimg-3 {
-  background-image: url("images/entrance_from_front_at_dusk.jpg");
-  min-height: 400px;
-} */
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+.w3-hover-opacity {
+    cursor: pointer;
+}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
+
+@media only screen and (min-device-width: 950px) {
+    .d_text::after {
+        border-top: .1rem solid #333 !important;
+        display: block;
+        width: 50rem;
+        margin: 2rem auto;
+        content: '  '
+    }
+
+
+    .sm_rule::after {
+        border-top: .1rem solid #333 !important;
+        display: block;
+        width: 10rem;
+        margin: 2rem auto;
+        content: '  '
+    }
+
+    .w3-half > img {
+        width: 80%
+    }
+
 }
 
 @media only screen and (max-device-width: 1200px) {
-  div.media-bar {
-    display: none;
-  }
+    div.media-bar {
+        display: none;
+    }
 }
 
 .visible,
 .hidden {
-  overflow: hidden;
-  /* This container should not have padding, borders, etc. */
+    overflow: hidden;
+    /* This container should not have padding, borders, etc. */
 }
+
 .visible {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity .2s linear;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .2s linear;
 }
+
 .hidden {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s .2s, opacity 2s linear;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .2s, opacity 2s linear;
 }
+
 .visible > div,
 .hidden > div {
-  /* Put any padding, border, min-height, etc. here. */
+    /* Put any padding, border, min-height, etc. here. */
 }
+
 .hidden > div {
-  margin-top: -10000px;
-  transition: margin-top 0s 2s;
+    margin-top: -10000px;
+    transition: margin-top 0s 2s;
 }
 
-.slick-arrow{
-  background:black;
-  color: black;
-  display: block;
+.slick-arrow {
+    background: black;
+    color: black;
+    display: block;
 }
 
 
-div.slick_custom_container{
-  height: 100%;
+div.slick_custom_container {
+    height: 100%;
 }
 
-img.slide{
-  margin: 20px;
-  height: 200px;
+img.slide {
+    margin: 20px;
+    height: 200px;
 }
 
 
 /*Removes bullets*/
 .custom-non-bulleted-ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
-.phone{
-  background: #5cb85c;
+.phone {
+    background: #5cb85c;
 }
 
-.custom-button-call{
-  display: inline-block;
+.custom-button-call {
+    display: inline-block;
     margin-bottom: 0;
     font-weight: 400;
     text-align: center;
@@ -109,9 +136,10 @@ img.slide{
     touch-action: manipulation;
     cursor: pointer;
     background-image: none;
+    font-family: "Lato", sans-serif;
     border: 1px solid transparent;
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.42857143;
     border-radius: 4px;
     -webkit-user-select: none;
@@ -119,92 +147,97 @@ img.slide{
     -ms-user-select: none;
     user-select: none;
     color: #fff;
-background-color: #5cb85c;
-border-color: #4cae4c;
+    background-color: #5cb85c;
 }
 
-p.small-font{
-    font-size: 11px;
+p.small-font {
+    font-size: 16px;
 }
 
 /* Icon bar */
 .icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 
 .icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
 }
 
 .icon-bar a:hover {
-  background-color: #000;
+    background-color: #000;
 }
 
 .facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
+    color: white;
 }
 
 .google {
-  background: #dd4b39;
-  color: white;
+    background: #dd4b39;
+    color: white;
 }
 
 .linkedin {
-  background: #007bb5;
-  color: white;
+    background: #007bb5;
+    color: white;
 }
 
 .youtube {
-  background: #bb0000;
-  color: white;
+    background: #bb0000;
+    color: white;
 }
 
 
 .accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    transition: 0.4s;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+    background-color: #ccc;
 }
 
 .panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
 }
 
 
-#home > div.w3-display-middle{
-  top: 95%;
+#home > div.w3-display-middle {
+    top: 95%;
+}
+
+.w3-content {
+    max-width: 1200px;
 }
